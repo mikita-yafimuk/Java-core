@@ -1,6 +1,7 @@
 package Other.Threads.Clock;
 
 public class MyThread extends Thread{
+
     private SimpleClock clock;
 
     public MyThread(SimpleClock clock) {
