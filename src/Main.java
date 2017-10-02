@@ -15,6 +15,6 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        System.out.println("Nikita");
+        System.out.println("Nikita just do it");
     }
 }
