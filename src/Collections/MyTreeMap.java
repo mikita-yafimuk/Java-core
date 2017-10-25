@@ -1,5 +1,6 @@
 package Collections;
 
+import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -21,5 +22,17 @@ public class MyTreeMap {
 
         System.out.println("First half of TreeMap: " + treeMap.headMap(3));
         System.out.println("Second half of TreeMap: " + treeMap.tailMap(3));
+
+        TreeMap<String, String> map = new TreeMap<String, String>();
+        map.put("A", "AAA");
+        map.put("A", "aaa");
+        map.put("Z", "ZZZ");
+        map.put("C", "CCC");
+        Iterator<Map.Entry<String, String>> iter1 = map.entrySet().iterator();
+        while (iter1.hasNext()) {
+            Map.Entry<String, String> entry = iter1.next();
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+        }
+
     }
 }
