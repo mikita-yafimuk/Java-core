@@ -1,4 +1,4 @@
-package StreamsInputOutput;
+package Other.StreamsInputOutput;
 
 import java.io.*;
 import java.nio.channels.FileChannel;

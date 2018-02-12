@@ -1,9 +1,6 @@
-package GUI;
-
-import javafx.embed.swing.JFXPanel;
+package Swing;
 
 import javax.swing.*;
-import java.io.IOException;
 
 public class Main {
     static JFrame jFrame = getFrame();
