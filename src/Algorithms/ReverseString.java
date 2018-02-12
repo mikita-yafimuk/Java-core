@@ -2,7 +2,7 @@ package Algorithms;
 
 public class ReverseString {
     public static void main(String[] args) {
-        String tesString = "Hello, world";
+        String tesString = "Nikita Efimuk";
         char[] str = tesString.toCharArray();
         int lenght = str.length;
         int i, j;
