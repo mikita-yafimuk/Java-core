@@ -15,4 +15,15 @@ public class Trash {
 
     }
 
+    public static int getCONST() {
+        return CONST;
+    }
+
+    public int getA() {
+        return a;
+    }
+
+    public int getZ() {
+        return z;
+    }
 }
