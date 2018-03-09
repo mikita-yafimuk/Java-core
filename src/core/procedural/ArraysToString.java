@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArraysToString {
     public static void main(String[] args) {
         arraysToString();
-        //loopTest();
+        loopTest();
 
         int a = 5;
         int b = 9;
