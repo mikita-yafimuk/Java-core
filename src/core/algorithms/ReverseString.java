@@ -20,6 +20,7 @@ public class ReverseString {
             str[j] = temp;
         }
         System.out.println(str);
+
     }
 
     private static void second(String str) {
