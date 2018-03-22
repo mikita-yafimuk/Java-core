@@ -13,6 +13,7 @@ public class Accordion {
             threadA.join();
             threadB.join();
             // C
+            threadA.toString();
             System.out.println("-----");
             Runnable printerC = new PrintRunnable("  C", 100);
             System.out.println("-----");
