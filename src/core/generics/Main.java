@@ -1,7 +1,5 @@
 package core.generics;
 
-import core.oop.abstractclass.AbstractShape;
-
 public class Main {
     public static void main(String[] args) {
         Box<Integer> intBox = new Box<>();

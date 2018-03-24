@@ -4,17 +4,16 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BRReadLines {
+public class BRConsoleSymbols {
     public static void main(String[] args) throws IOException {
+        char c;
         BufferedReader br = new BufferedReader(
                 new InputStreamReader(System.in));
-        String str;
-        System.out.println("Enter 'stop' to exit");
+        System.out.println("Enter symbols, 'q' -> exit.");
         do {
-            str = br.readLine();
-            System.out.println(str);
+            c = (char)br.read();
+            System.out.println(c);
         }
-        while(!str.equalsIgnoreCase("stop"));
+        while(c != 'q');
     }
-
 }

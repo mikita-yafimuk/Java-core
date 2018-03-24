@@ -1,8 +1,8 @@
-package core.iostreams;
+package core.iostreams.objtofile;
 
 import java.io.Serializable;
 
-public class User implements Serializable {
+public class User implements Serializable{
 
     private String name;
     private String id;
