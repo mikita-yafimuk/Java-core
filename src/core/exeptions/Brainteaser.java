@@ -2,7 +2,7 @@ package core.exeptions;
 
 import java.io.IOException;
 
-public class ManyExc {
+public class Brainteaser {
     public static void main(String[] args) {
         try {
             try {

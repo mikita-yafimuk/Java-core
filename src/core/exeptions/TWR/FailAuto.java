@@ -1,4 +1,4 @@
-package core.exeptions;
+package core.exeptions.TWR;
 
 public class FailAuto implements AutoCloseable{
     private String msg;

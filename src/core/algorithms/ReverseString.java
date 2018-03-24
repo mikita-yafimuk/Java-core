@@ -3,13 +3,13 @@ package core.algorithms;
 public class ReverseString {
 
     public static void main(String[] args) {
-        String tesString = "Nikita Efimuk";
-        first(tesString);
-        second(tesString);
+        String stringForReverse = "Nikita Efimuk";
+        first(stringForReverse);
+        second(stringForReverse);
     }
 
-    private static void first(String tesString) {
-        char[] str = tesString.toCharArray();
+    private static void first(String stringForReverse) {
+        char[] str = stringForReverse.toCharArray();
         int lenght = str.length;
         int i, j;
         char temp;
@@ -23,13 +23,13 @@ public class ReverseString {
 
     }
 
-    private static void second(String str) {
-        char[] data = str.toCharArray();
+    private static void second(String stringForReverse) {
+        char[] data = stringForReverse.toCharArray();
 
-        for (int i = 0; i < str.length() / 2; i++) {
+        for (int i = 0; i < stringForReverse.length() / 2; i++) {
             char tmp = data[i];
-            data[i] = data[str.length() - i - 1];
-            data[str.length() - i - 1] = tmp;
+            data[i] = data[stringForReverse.length() - i - 1];
+            data[stringForReverse.length() - i - 1] = tmp;
         }
         System.out.println(data);
     }

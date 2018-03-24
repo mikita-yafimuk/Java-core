@@ -21,6 +21,6 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] array = {9, 3, 4, 7, 2, 0 , 1, 10};
         System.out.println(Arrays.toString(bubbleSort(array)));
-        //System.out.println(Arrays.binarySearch(array, 1));
+        System.out.println(Arrays.binarySearch(array, 1));
     }
 }

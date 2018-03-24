@@ -1,8 +1,8 @@
-package core.exeptions;
+package core.exeptions.TWR;
 
 import java.util.Arrays;
 
-public class TrRec {
+public class TryResources {
     public static void main(String[] args) {
         try (
                 FailAuto in = new FailAuto("x");
