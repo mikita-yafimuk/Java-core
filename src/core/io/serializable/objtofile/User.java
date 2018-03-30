@@ -1,4 +1,4 @@
-package core.iostreams.objtofile;
+package core.io.serializable.objtofile;
 
 import java.io.Serializable;
 
