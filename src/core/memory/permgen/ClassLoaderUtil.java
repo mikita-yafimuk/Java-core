@@ -5,8 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class ClassLoaderUtil {
-    public static byte[] loadByteCode(Class loader, String className)
-            throws IOException {
+    public static byte[] loadByteCode(Class loader, String className) throws IOException {
         String fileName = "/"
                 + className.replaceAll("\\.", "/") + ".class";
         InputStream is = loader.getResourceAsStream(fileName);
