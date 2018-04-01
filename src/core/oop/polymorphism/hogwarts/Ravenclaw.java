@@ -1,6 +1,6 @@
-package core.oop.polymorphism;
+package core.oop.polymorphism.hogwarts;
 
-public class Ravenclaw extends Hogwarts {
+public class Ravenclaw extends Faculty {
 
     @Override
     public void getFaculty(){

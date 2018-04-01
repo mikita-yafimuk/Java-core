@@ -17,6 +17,8 @@ public class ATable {
     public static void main(String[] args) {
 
         if (args.length == 1) {
+            byte b0 = 1;
+            byte b1 = 2;
 
             File directory = new File(args[0]);
 

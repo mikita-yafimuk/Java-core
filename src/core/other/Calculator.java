@@ -1,9 +1,5 @@
 package core.other;
 
-/**
- * Created by USER on 10/17/2017
- */
-
 public class Calculator {
 
     /*

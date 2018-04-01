@@ -1,4 +1,4 @@
-package core.exeptions.TWR;
+package core.exeptions.trywithres;
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
-package core.oop.polymorphism;
+package core.oop.polymorphism.hogwarts;
 
-public class Gryffindor extends Hogwarts {
+public class Gryffindor extends Faculty {
 
     @Override
     public void getFaculty(){

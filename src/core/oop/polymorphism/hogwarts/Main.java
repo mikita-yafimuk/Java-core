@@ -1,14 +1,14 @@
-package core.oop.polymorphism;
+package core.oop.polymorphism.hogwarts;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Hogwarts[] hogwarts = new Hogwarts[] {
+        Faculty[] hogwarts = new Faculty[] {
                 new Gryffindor(), new Slytherin(), new Ravenclaw(), new Hufflepuff()
         };
 
-        for (Hogwarts faculty : hogwarts)
+        for (Faculty faculty : hogwarts)
             faculty.getFaculty();
     }
 }
