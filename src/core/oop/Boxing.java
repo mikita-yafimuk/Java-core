@@ -2,8 +2,8 @@ package core.oop;
 
 public class Boxing {
     public static void main(String[] args) {
-        ints();
-        System.out.println();
+        //ints();
+        //System.out.println();
         strs();
     }
 
@@ -12,7 +12,7 @@ public class Boxing {
         //it use valueOf method
         Integer k0 = 100;
         Integer k1 = 100;
-        System.out.println(k0 == k1); //true
+        System.out.println(k0 == k1);
 
         Integer k2 = new Integer(100);
         Integer k3 = new Integer(100);
