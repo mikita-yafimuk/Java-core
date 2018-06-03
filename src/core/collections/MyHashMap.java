@@ -26,9 +26,6 @@ public class MyHashMap {
         System.out.println();
         // сортировка коллекции
         Map<String, String> tree = new TreeMap<String, String>(map);
-        for(Map.Entry<String,String> entry : tree.entrySet()) {
-            System.out.print(entry.getKey() + " -> " + entry.getValue() + "; ");
-        }
-
+        tree.forEach((key, value) -> System.out.print(key + " -> " + value + "; "));
     }
 }

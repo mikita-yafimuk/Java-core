@@ -10,6 +10,7 @@ public class InnerNestedStaticAnon {
             System.out.println(b);
         }
     }
+
     class Inner {
         void print() {
             System.out.println(a);
@@ -20,6 +21,7 @@ public class InnerNestedStaticAnon {
 
 class Test {
     private static String className = Test.class.getName();
+
     public static void main(String[] args) {
         InnerNestedStaticAnon.NestedStatic nestedStatic = new InnerNestedStaticAnon.NestedStatic();
         InnerNestedStaticAnon innerNestedStaticAnon = new InnerNestedStaticAnon();

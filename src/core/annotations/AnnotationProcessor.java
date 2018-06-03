@@ -21,6 +21,7 @@ public class AnnotationProcessor {
         invokeService("LazyService");
 
     }
+
     static void inspectService(Class<?> service) {
         if (service.isAnnotationPresent(Service.class)) {
             Service ann = service.getAnnotation(Service.class);
