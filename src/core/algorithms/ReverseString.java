@@ -6,6 +6,8 @@ public class ReverseString {
         String stringForReverse = "Nikita Efimuk";
         first(stringForReverse);
         second(stringForReverse);
+        System.out.println(new StringBuilder(stringForReverse).reverse());
+        third(stringForReverse);
     }
 
     private static void first(String stringForReverse) {
@@ -32,6 +34,15 @@ public class ReverseString {
             data[stringForReverse.length() - i - 1] = tmp;
         }
         System.out.println(data);
+    }
+
+    private static void third(String stringForReverse) {
+        String result = "";
+        for (int i = stringForReverse.length() - 1; i >= 0; i--)
+        {
+            result += stringForReverse.charAt(i);
+        }
+        System.out.println(result);
     }
 }
 
