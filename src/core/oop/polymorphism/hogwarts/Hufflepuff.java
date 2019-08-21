@@ -1,9 +1,11 @@
 package core.oop.polymorphism.hogwarts;
 
-public class Hufflepuff extends Faculty {
+public class Hufflepuff extends Faculty
+{
 
-    @Override
-    public void getFaculty(){
-        System.out.println("Hufflepuff");
-    }
+	@Override
+	public void getFaculty()
+	{
+		System.out.println("Hufflepuff");
+	}
 }

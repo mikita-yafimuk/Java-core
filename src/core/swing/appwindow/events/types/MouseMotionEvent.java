@@ -2,27 +2,32 @@ package core.swing.appwindow.events.types;
 
 import core.swing.appwindow.events.Event;
 
-public class MouseMotionEvent extends Event {
-	
+public class MouseMotionEvent extends Event
+{
+
 	private int x, y;
 	private boolean dragged;
 
-	public MouseMotionEvent(int x, int y, boolean dragged) {
+	public MouseMotionEvent(int x, int y, boolean dragged)
+	{
 		super(Event.Type.MOUSE_MOVED);
 		this.x = x;
 		this.y = y;
 		this.dragged = dragged;
 	}
 
-	public int getX() {
+	public int getX()
+	{
 		return x;
 	}
 
-	public int getY() {
+	public int getY()
+	{
 		return y;
 	}
 
-	public boolean isDragged() {
+	public boolean isDragged()
+	{
 		return dragged;
 	}
 

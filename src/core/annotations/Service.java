@@ -11,6 +11,7 @@ import java.lang.annotation.Target;
 @Inherited
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Service {
-    String name();
+public @interface Service
+{
+	String name();
 }

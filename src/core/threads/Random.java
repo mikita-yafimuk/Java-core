@@ -1,32 +1,37 @@
 package core.threads;
 
-public class Random {
+public class Random
+{
 
-    private static int counter = 0;
-    private static final int LOOP_COUNT = 10_000_000;
+	private static final int LOOP_COUNT = 10_000_000;
+	private static int counter = 0;
 
-    public static void main(String[] args) throws InterruptedException {
-        Thread t0 = new Thread(() -> {
-            for (int i = 0; i < LOOP_COUNT; i++) {
-                counter++;
-            }
-        });
-        t0.run();
+	public static void main(String[] args) throws InterruptedException
+	{
+		Thread t0 = new Thread(() -> {
+			for (int i = 0; i < LOOP_COUNT; i++)
+			{
+				counter++;
+			}
+		});
+		t0.run();
 
-        Thread t1 = new Thread(() -> {
-            for (int i = 0; i < LOOP_COUNT; i++) {
-                counter++;
-            }
-        });
-        t1.run();
+		Thread t1 = new Thread(() -> {
+			for (int i = 0; i < LOOP_COUNT; i++)
+			{
+				counter++;
+			}
+		});
+		t1.run();
 
-        t0.join();
-        t1.join();
+		t0.join();
+		t1.join();
 
-        System.out.println(counter);
-    }
+		System.out.println(counter);
+	}
 
-    public synchronized static void inc() {
-        counter++;
-    }
+	public synchronized static void inc()
+	{
+		counter++;
+	}
 }

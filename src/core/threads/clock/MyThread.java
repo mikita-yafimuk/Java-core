@@ -1,21 +1,28 @@
 package core.threads.clock;
 
-public class MyThread extends Thread{
+public class MyThread extends Thread
+{
 
-    private SimpleClock clock;
+	private SimpleClock clock;
 
-    public MyThread(SimpleClock clock) {
-        this.clock = clock;
-    }
+	public MyThread(SimpleClock clock)
+	{
+		this.clock = clock;
+	}
 
-    @Override
-    public void run() {
-        while (true) {
-            clock.setTime();
-            try {
-                Thread.sleep(500);
-            } catch (Exception e) {
-            }
-        }
-    }
+	@Override
+	public void run()
+	{
+		while (true)
+		{
+			clock.setTime();
+			try
+			{
+				Thread.sleep(500);
+			}
+			catch (Exception e)
+			{
+			}
+		}
+	}
 }

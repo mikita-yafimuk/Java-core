@@ -4,12 +4,14 @@ import java.awt.*;
 
 import javax.swing.*;
 
-public class OvalComponent extends JComponent {
+public class OvalComponent extends JComponent
+{
 
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
+	@Override
+	protected void paintComponent(Graphics g)
+	{
+		super.paintComponent(g);
 
-        g.drawOval(5,5,getWidth() - 10, getHeight() - 10);
-    }
+		g.drawOval(5, 5, getWidth() - 10, getHeight() - 10);
+	}
 }

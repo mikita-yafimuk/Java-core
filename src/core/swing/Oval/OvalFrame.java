@@ -2,11 +2,13 @@ package core.swing.Oval;
 
 import javax.swing.*;
 
-public class OvalFrame extends JFrame {
+public class OvalFrame extends JFrame
+{
 
-    public OvalFrame() {
-        OvalComponent oc = new OvalComponent();
-        add(oc);
-        setBounds(200,200,300,250);
-    }
+	public OvalFrame()
+	{
+		OvalComponent oc = new OvalComponent();
+		add(oc);
+		setBounds(200, 200, 300, 250);
+	}
 }

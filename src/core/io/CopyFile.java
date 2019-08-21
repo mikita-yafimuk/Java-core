@@ -9,40 +9,43 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.channels.FileChannel;
 
-public class CopyFile {
-    public static void main(String[] args) throws IOException {
-        InputStream inFile = new FileInputStream("f:/got.mkv");
-        InputStream in = new BufferedInputStream(inFile);
-        OutputStream outFile = new FileOutputStream("f:/got2.mkv");
-        OutputStream out = new BufferedOutputStream(outFile);
-        int data;
+public class CopyFile
+{
+	public static void main(String[] args) throws IOException
+	{
+		InputStream inFile = new FileInputStream("f:/got.mkv");
+		InputStream in = new BufferedInputStream(inFile);
+		OutputStream outFile = new FileOutputStream("f:/got2.mkv");
+		OutputStream out = new BufferedOutputStream(outFile);
+		int data;
 
-        long startTime0 = System.nanoTime();
+		long startTime0 = System.nanoTime();
 
-        while((data = in.read()) != -1) {
-            out.write(data);
-        }
+		while ((data = in.read()) != -1)
+		{
+			out.write(data);
+		}
 
-        long endTime0 = System.nanoTime() - startTime0;
-        System.out.println("Stream:  " + endTime0);
+		long endTime0 = System.nanoTime() - startTime0;
+		System.out.println("Stream:  " + endTime0);
 
-        in.close();
-        out.close();
+		in.close();
+		out.close();
 
-        FileInputStream fis = new FileInputStream("f:/got.mkv");
-        FileOutputStream fos = new FileOutputStream("f:/got3.mkv");
-        FileChannel fcin = fis.getChannel();
-        FileChannel fcout = fos.getChannel();
+		FileInputStream fis = new FileInputStream("f:/got.mkv");
+		FileOutputStream fos = new FileOutputStream("f:/got3.mkv");
+		FileChannel fcin = fis.getChannel();
+		FileChannel fcout = fos.getChannel();
 
-        long startTime = System.nanoTime();
+		long startTime = System.nanoTime();
 
-        fcin.transferTo(0, fcin.size(), fcout);
+		fcin.transferTo(0, fcin.size(), fcout);
 
-        long endTime = System.nanoTime() - startTime;
-        System.out.println("Channel: " + endTime);
+		long endTime = System.nanoTime() - startTime;
+		System.out.println("Channel: " + endTime);
 
-        fcin.close();
-        fcout.close();
+		fcin.close();
+		fcout.close();
 
-    }
+	}
 }

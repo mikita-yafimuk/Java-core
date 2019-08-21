@@ -2,29 +2,32 @@ package core.swing.appwindow.events.types;
 
 import core.swing.appwindow.events.Event;
 
-public class MouseButtonEvent extends Event {
+public class MouseButtonEvent extends Event
+{
 
 	private int keyCode, x, y;
-	
-	protected MouseButtonEvent(Type type, int keyCode, int x, int y) {
+
+	protected MouseButtonEvent(Type type, int keyCode, int x, int y)
+	{
 		super(type);
 		this.keyCode = keyCode;
-		this.x =x;
-		this.y=y;
+		this.x = x;
+		this.y = y;
 	}
 
-	public int getKeyCode() {
+	public int getKeyCode()
+	{
 		return keyCode;
 	}
 
-	public int getX() {
+	public int getX()
+	{
 		return x;
 	}
 
-	public int getY() {
+	public int getY()
+	{
 		return y;
 	}
 
-	
-	
 }
