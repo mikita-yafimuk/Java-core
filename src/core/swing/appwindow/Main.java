@@ -1,6 +1,6 @@
 package core.swing.appwindow;
 
-import java.awt.Color;
+import java.awt.*;
 
 import core.swing.appwindow.core.Window;
 import core.swing.appwindow.sandbox.Example;

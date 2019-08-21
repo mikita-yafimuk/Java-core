@@ -1,11 +1,15 @@
 package core.io.serializable;
 
-import core.io.serializable.persons.PersonA;
-import core.io.serializable.persons.PersonB;
-import core.io.serializable.persons.PersonC;
-
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
 import java.util.Arrays;
+
+import core.io.serializable.persons.PersonC;
 
 public class PersonWriterReader {
     public static void main(String[] args) throws IOException, ClassNotFoundException {

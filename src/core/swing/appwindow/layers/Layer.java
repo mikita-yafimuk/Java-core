@@ -1,6 +1,6 @@
 package core.swing.appwindow.layers;
 
-import java.awt.Graphics;
+import java.awt.*;
 
 import core.swing.appwindow.events.Event;
 import core.swing.appwindow.events.EventListener;

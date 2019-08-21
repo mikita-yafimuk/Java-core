@@ -1,8 +1,8 @@
 package core.oop.abstractclass;
 
+import java.awt.*;
 
-import java.awt.GridLayout;
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class ShapeFrame extends JFrame
 {

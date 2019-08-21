@@ -1,9 +1,6 @@
 package core.swing.appwindow.sandbox;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Point;
-import java.awt.Rectangle;
+import java.awt.*;
 import java.util.Random;
 
 import core.swing.appwindow.events.Dispatcher;

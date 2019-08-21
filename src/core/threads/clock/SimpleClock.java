@@ -1,11 +1,10 @@
 package core.threads.clock;
 
-import java.awt.Font;
+import java.awt.*;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
+
+import javax.swing.*;
 
 public class SimpleClock extends JFrame{
     private JLabel clockLabel = new JLabel();

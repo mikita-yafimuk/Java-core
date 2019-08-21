@@ -1,7 +1,8 @@
 package core.oop.abstractclass;
 
+import java.awt.*;
+
 import javax.swing.*;
-import java.awt.Graphics;
 
 public abstract class AbstractShape extends JComponent {
 

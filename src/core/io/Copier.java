@@ -1,6 +1,10 @@
 package core.io;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 public class Copier {
     public static void main(String[] args) throws IOException {

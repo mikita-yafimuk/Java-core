@@ -1,6 +1,6 @@
 package core.oop.abstractclass;
 
-import java.awt.Graphics;
+import java.awt.*;
 
 public class OvalComponent extends AbstractShape {
     @Override
